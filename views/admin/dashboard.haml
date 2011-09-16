@@ -1,0 +1,17 @@
+%h2
+    Administration
+
+%p.alert
+    = @b.flash
+
+%form(action='/admin/clear_views' method='post')
+    %div(class='mam')
+        %button(type='submit')
+            Clear view cache
+
+%form(action='/admin/clear_templates' method='post')
+    %div(class='mam')
+        %button(type='submit')
+            Clear all caches
+
+

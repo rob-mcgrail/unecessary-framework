@@ -1,0 +1,8 @@
+require 'rubygems'
+require 'redgreen'
+
+require File.dirname(__FILE__) + '/../core'
+
+Dir['test/core/*_test.rb'].each {|file| require file}
+Dir['test/user/*_test.rb'].each {|file| require file}
+
